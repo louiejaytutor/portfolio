@@ -1,0 +1,226 @@
+* {
+    font-family: Bahnschrift;
+    margin: 0;
+    padding: 0;
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+    overflow-y: scroll;
+    background-color: #100E1A;
+}
+.header {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    width: 1220px;
+    margin: auto;
+    padding: 10px 5px;
+    background-color: #100E1A;
+}
+.header .logo {
+    height: 40px;
+}
+.navigation {
+    display: inline-block;
+    position: absolute;
+    padding: 5px;
+    right: 0;
+}
+.navigation a {
+    color: #999;
+    text-decoration: none;
+    display: inline-block;
+    margin-left: 10px;
+    padding: 5px;
+    overflow: hidden;
+    transition: 0.25s ease;
+}
+.navigation a:hover {
+    color: #6E31DF;
+}
+.navigation .active {
+    color: #FFF;
+    font-weight: bold;
+    border-bottom: 2.5px solid #FFF;
+}
+.navigation .active:hover {
+    color: #6E31DF;
+    border-bottom: 2.5px solid #6E31DF;
+}
+.home,
+.skills,
+.projects {
+    color: #FFF;
+    width: 1220px;
+    margin: auto;
+    padding-top: 64.41px;
+}
+.home-l, .home-r,
+.skills-l, .skills-r {
+    display: inline-block;
+    vertical-align: top;
+    width: 607.78px;
+}
+.home h4 {
+    font-style: italic;
+    text-transform: uppercase;
+    font-weight: normal;
+}
+.home h1 {
+    font-size: 40px;
+    text-transform: uppercase;
+    margin-top: 25px;
+    animation: flickAnim 3s infinite ease-in-out;
+}
+@keyframes flickAnim {
+    0% {
+        color: #FFF;
+    }
+    50% {
+        color: #6E31DF;
+    }
+    100% {
+        color: #FFF;
+    }
+}
+.home h2 {
+    margin-top: 25px;
+}
+.home h5 {
+    color: #999;
+    font-size: 16px;
+    font-style: italic;
+    font-weight: normal;
+    margin-top: 25px;
+}
+.home-l button {
+    color: #FFF;
+    font-size: 16px;
+    cursor: pointer;
+    font-weight: bold;
+    margin-top: 25px;
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: #6E31DF;
+}
+.home-r {
+    text-align: center;
+}
+.home-r img {
+    height: 300px;
+    overflow: hidden;
+    animation: floatAnim 5s infinite ease-in-out;
+    border-radius: 50%;
+}
+@keyframes floatAnim {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+.skills,
+.projects {
+    cursor: default;
+}
+.skills h1,
+.projects h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+.skills-l-ft {
+    color: #C8C8C8;
+    text-align: left;
+}
+.skill-box {
+    text-align: left;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    transition: 0.5s ease;
+    background-color: #282731;
+}
+.skill-box b {
+    color: #6E31DF;
+}
+.skill-box:hover b {
+    color: #FFF;
+}
+.skill-box span {
+    color: #C8C8C8;
+}
+.skill-r-bar {
+    width: calc(100% - 10px);
+    margin-left: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    background-color: #282731;
+}
+.skill-r-bar div {
+    display: inline-block;
+}
+.skill-r-bar-fill {
+    position: relative;
+    padding: 10px;
+    border-radius: 5px;
+    transition: 0.5s ease;
+    background-color: #6E31DF;
+}
+.skill-r-bar-fill:hover {
+    background-color: #632CC8;
+}
+.skill-r-bar-fill span {
+    display: inline-block;
+}
+.skill-r-bar-fill span:nth-child(2) {
+    color: #999;
+    position: absolute;
+    right: 0;
+    margin-right: 10px;
+}
+.projects-box {
+    cursor: default;
+    display: inline-block;
+    vertical-align: top;
+    height: 400px;
+    min-height: 400px;
+    width: 325px;
+    max-width: 400px;
+    margin: 10px;
+    padding: 20px;
+    border-radius: 5px;
+    transition: 0.5s ease;
+    background-color: #282731;
+}
+.skill-box:hover,
+.projects-box:hover {
+    background-color: #6E31DF;
+}
+.projects-box img {
+    width: 320px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+.projects-box h2 {
+    margin-bottom: 10px;
+}
+.projects-box h4 {
+    color: #C8C8C8;
+    font-size: 18px;
+    font-weight: normal;
+}
+.footer {
+    color: #FFF;
+    text-align: center;
+    width: calc(100% - 20px);
+    margin-top: 50px;
+    padding: 10px;
+    background-color: #282731;
+}
