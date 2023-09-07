@@ -50,16 +50,19 @@ body {
     border-bottom: 2.5px solid #6E31DF;
 }
 .home,
+.about,
 .skills,
 .projects,
-.certificates {
+.certificates,
+.contact {
     color: #FFF;
     width: 1220px;
     margin: auto;
     padding-top: 64.41px;
 }
 .home-l, .home-r,
-.skills-l, .skills-r {
+.skills-l, .skills-r,
+.contact-l, .contact-r {
     display: inline-block;
     vertical-align: top;
     width: 607.78px;
@@ -177,9 +180,11 @@ body {
     width: 1000px;
     margin: auto;
 }
+.about h1,
 .skills h1,
 .projects h1,
-.certificates h1 {
+.certificates h1,
+.contact h1 {
     text-align: center;
     margin-bottom: 20px;
 }
@@ -290,6 +295,100 @@ body {
     object-fit: cover;
     object-position: center center;
     border-radius: 5px;
+}
+.contact-desc,
+.contact-info-logo,
+.contact-info-desc {
+    padding: 10px;
+    border-radius: 5px;
+    transition: 0.5s ease;
+    animation: floatAnim 5s infinite ease-in-out;
+    background-color: #282731;
+}
+.contact-desc {
+    cursor: default;
+    color: #C8C8C8;
+}
+.contact-desc:hover,
+.contact-info-logo:hover,
+.contact-info-desc:hover {
+    background-color: #6E31DF;
+}
+.contact-info {
+    margin-top: 10px;
+}
+.contact-info div {
+    display: inline-block;
+}
+.contact-info-logo {
+    color: #6E31DF;
+    text-align: center;
+    width: 20px;
+}
+.contact-info-logo:hover,
+.contact-info-desc:hover {
+    color: #FFF;
+}
+.contact-info-desc {
+    width: 543.5px;
+}
+.contact-l a {
+    color: #FFF;
+    font-size: 30px;
+    text-align: center;
+    height: 30px;
+    width: 30px;
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 50%;
+    transition: 0.5s ease;
+    animation: floatAnim 5s infinite ease-in-out;
+    background-color: #282731;
+}
+.contact-l a:hover {
+    background-color: #6E31DF;
+}
+.contact-r form {
+    margin-left: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    animation: floatAnim 5s infinite ease-in-out;
+    background-color: #282731;
+}
+.contact-r form h2 {
+    margin-bottom: 10px;
+}
+.contact-r form label {
+    display: block;
+}
+.contact-r form input,
+.contact-r form textarea {
+    padding: 10px;
+    width: calc(100% - 20px);
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+}
+.contact-r form textarea {
+    min-width: calc(100% - 20px);
+    max-width: calc(100% - 20px);
+}
+.contact-r form input[type="submit"] {
+    color: #FFF;
+    font-size: 16px;
+    cursor: pointer;
+    font-weight: bold;
+    height: 40px;
+    width: 100px;
+    border: none;
+    border-radius: 5px;
+    transition: 0.5s ease;
+    background-color: #6E31DF;
+}
+.contact-r form input[type="submit"]:hover {
+    background-color: #7D46E2;
 }
 .footer {
     color: #FFF;
