@@ -1,0 +1,77 @@
+html {
+    scroll-behavior: smooth;
+}
+.flickAnim {
+    animation: flickAnim 3s infinite ease-in-out;
+}
+@keyframes flickAnim {
+    0% {
+        color: #c9c9c9;
+    }
+    50% {
+        color: #1a73e8;
+    }
+    100% {
+        color: #c9c9c9;
+    }
+}
+
+.floatAnim {
+    animation: floatAnim 5s infinite ease-in-out;
+}
+@keyframes floatAnim {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.floatAnim1 {
+    animation: floatAnim1 7s infinite ease-in-out;
+}
+@keyframes floatAnim1 {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.floatAnim2 {
+    animation: floatAnim2 5s infinite ease-in-out;
+}
+@keyframes floatAnim2 {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.floatAnim3 {
+    animation: floatAnim3 10s infinite ease-in-out;
+}
+@keyframes floatAnim3 {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-30px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
