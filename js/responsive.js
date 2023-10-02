@@ -12,10 +12,10 @@ $(document).ready(function () {
             $(".container-r").removeClass("w-w450");
             $(".container-r").addClass("w-full");
 
-            $(".about-l").removeClass("hover:scale-105");
-            
             $(".about-mypic").addClass("mx-auto");
             $(".about-mypic").addClass("mb-10");
+            $(".about-mypic").removeClass("h-h400");
+            $(".about-mypic").addClass("h-h300");
         }
         else {
             $(".container").removeClass("w-full");
@@ -27,10 +27,10 @@ $(document).ready(function () {
             $(".container-r").removeClass("w-full");
             $(".container-r").addClass("w-w450");
 
-            $(".about-l").addClass("hover:scale-105");
-
             $(".about-mypic").removeClass("mx-auto");
             $(".about-mypic").removeClass("mb-10");
+            $(".about-mypic").removeClass("h-h300");
+            $(".about-mypic").addClass("h-h400");
         }
 
         if (windowWidth <= 767) {
