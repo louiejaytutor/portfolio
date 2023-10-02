@@ -1,5 +1,5 @@
 * {
-    cursor: default;
+    user-select: none;
     margin: 0;
     transition: all 0.5s ease-in-out;
 }
