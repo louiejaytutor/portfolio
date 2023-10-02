@@ -4,14 +4,12 @@ $(document).ready(function() {
         var width = $(this).data("value");
         
         $("#percentage-bar").css("width", width);
-        $("#percentage-bar").removeClass("bg-clightblack");
-        $("#percentage-bar").addClass("bg-cblue");
-        $("#percentage").html(title + " (" + width + ")");
+        $("#percentage-bar").html(width);
+        $("#percentage").html(title);
     });
     $(".prog-lang").mouseleave(function () {
-        $("#percentage-bar").css("width", "100%");
-        $("#percentage-bar").removeClass("bg-cblue");
-        $("#percentage-bar").addClass("bg-clightblack");
-        $("#percentage").html("Hover below");
+        $("#percentage-bar").css("width", "52.7%");
+        $("#percentage-bar").html("52.7%");
+        $("#percentage").html("Overall");
     });
 });
