@@ -29,11 +29,11 @@
     </div>
     <div id="about" class="text-cblack text-center mt-10 p-10 bg-clightblack">
         <div class="w-w1000 mx-auto container">
-            <div class="relative inline-block align-middle w-w450 hover:scale-105 container-l about-l">
-                <img src="img/logos/html-logo.png" title="HTML" class="absolute w-w75 m-5 rounded-br5 floatAnim1 bg-cblack">
-                <img src="img/logos/css-logo.png" title="CSS" class="absolute right-0 w-w75 mt-20 mr-20 rounded-br5 floatAnim2 bg-cblack">
-                <img src="img/logos/javascript-logo.png" title="JavaScript" class="absolute bottom-0 w-w75 mb-20 p-2 rounded-br5 floatAnim3 bg-cblack">
-                <img src="img/my-photo1.png" class="h-h400 rounded-bl-br30p rounded-br-br60p about-mypic">
+            <div class="relative inline-block align-middle w-w450 container-l about-l">
+                <img src="img/logos/html-logo.png" title="HTML" class="absolute w-w75 m-5 rounded-br5 z-10 floatAnim1 bg-cblack">
+                <img src="img/logos/css-logo.png" title="CSS" class="absolute right-0 w-w75 mt-20 mr-20 rounded-br5 z-10 floatAnim2 bg-cblack">
+                <img src="img/logos/javascript-logo.png" title="JavaScript" class="absolute bottom-0 w-w75 mb-20 p-2 rounded-br5 z-10 floatAnim3 bg-cblack">
+                <img src="img/my-photo1.png" class="h-h400 rounded-bl-br30p rounded-br-br60p z-20 hover:scale-105 about-mypic">
             </div>
             <div alt="About Me" class="inline-block align-middle w-w450 custom container-r">
                 <h1 class="text-cgray text-left">Hello World! I'm Louie Jay Tutor, a passionate Web Developer from Antipolo City.
@@ -82,10 +82,9 @@
                 <h1 class="text-cgray">Committed to lifelong learning and adaptability to keep skills relevant and stay at the forefront of web development.</h1>
             </div>
             <div class="w-full">
-                <div class="m-2 rounded-br20 bg-clightblack shadow-md">
-                    <div id="percentage-bar" class="font-bold h-h30 rounded-br20" style="width: 100%;">
-                        <h1 id="percentage" class="text-cgray p-1">Hover below</h1>
-                    </div>
+                <div class="relative m-2 rounded-br20 bg-clightblack shadow-md">
+                    <h1 id="percentage" class="text-cgray absolute w-full p-1">Overall</h1>
+                    <div id="percentage-bar" class="text-clightblue text-left h-h30 p-1 pl-5 rounded-br20 bg-cblue" style="width: 52.7%;">52.7%</div>
                 </div>
                 <div class="m-2">
                     <div data-value="90%" title="PHP" class="h-h100 w-w100 inline-flex justify-center m-2 p-2 border-2 border-blightblack rounded-br5 bg-clightblack shadow-md hover:border-bblue prog-lang">
