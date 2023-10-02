@@ -11,13 +11,16 @@
     <title>Louie Jay Tutor's Portfolio</title>
 </head>
 <body class="bg-cblack">
-    <div class="text-cgray text-sm font-semibold text-center p-4 sticky top-0 left-0 bg-clightblack" style="z-index: 1;">
-        <a href="#home" class="p-4 hover:text-cblue">Home</a>
-        <a href="#about" class="p-4 hover:text-cblue">About</a>
-        <a href="#skills" class="p-4 hover:text-cblue">Skills</a>
-        <a href="#projects" class="p-4 hover:text-cblue">Projects</a>
-        <a href="#certificates" class="p-4 hover:text-cblue">Certificates</a>
-        <a href="#contact" class="p-4 hover:text-cblue">Contact</a>
+    <div class="text-cgray text-sm font-semibold text-center p-4 sticky top-0 left-0 w-full bg-clightblack navigation" style="z-index: 1;">
+        <button class="absolute hover:text-cblue opacity-0 pointer-events-none menu"><i class="fas fa-bars"></i></button>
+        <div class="nav">
+            <a href="#home" class="p-4 hover:text-cblue">Home</a>
+            <a href="#about" class="p-4 hover:text-cblue">About</a>
+            <a href="#skills" class="p-4 hover:text-cblue">Skills</a>
+            <a href="#projects" class="p-4 hover:text-cblue">Projects</a>
+            <a href="#certificates" class="p-4 hover:text-cblue">Certificates</a>
+            <a href="#contact" class="p-4 hover:text-cblue">Contact</a>
+        </div>
     </div>
     <div id="home" class="text-cblack text-center h-full mt-10 p-4">
         <img src="img/my-photo.jpg" class="h-h300 mx-auto rounded-full floatAnim">
@@ -29,13 +32,15 @@
     </div>
     <div id="about" class="text-cblack text-center mt-10 p-10 bg-clightblack">
         <div class="w-w1000 mx-auto container">
-            <div class="relative inline-block align-middle w-w450 about-l">
-                <img src="img/logos/html-logo.png" title="HTML" class="absolute w-w75 m-5 ml-20 rounded-br5 z-10 floatAnim1 bg-cblack">
-                <img src="img/logos/css-logo.png" title="CSS" class="absolute right-0 w-w75 mt-20 mr-20 rounded-br5 z-10 floatAnim2 bg-cblack">
-                <img src="img/logos/javascript-logo.png" title="JavaScript" class="absolute bottom-0 w-w75 ml-5 mb-20 p-2 rounded-br5 z-10 floatAnim3 bg-cblack">
-                <img src="img/my-photo1.png" class="h-h400 mx-auto rounded-bl-br30p rounded-br-br60p z-20 hover:scale-105 about-mypic">
+            <div class="inline-block align-middle w-w450 about-l">
+                <div class="relative w-w450 hover:scale-105 about-l-img">
+                    <img src="img/logos/html-logo.png" title="HTML" class="absolute w-w75 m-5 ml-20 rounded-br5 floatAnim1 bg-cblack about-logo">
+                    <img src="img/logos/css-logo.png" title="CSS" class="absolute right-0 w-w75 mt-20 mr-20 rounded-br5 floatAnim2 bg-cblack about-logo">
+                    <img src="img/logos/javascript-logo.png" title="JavaScript" class="absolute bottom-0 w-w75 ml-5 mb-20 p-2 rounded-br5 floatAnim3 bg-cblack about-logo">
+                    <img src="img/my-photo1.png" class="h-h400 mx-auto rounded-bl-br30p rounded-br-br60p about-mypic">
+                </div>
             </div>
-            <div alt="About Me" class="inline-block align-middle w-w450 custom about-r">
+            <div alt="about" class="inline-block align-middle w-w450 custom about-r">
                 <h1 class="text-cgray text-left">Hello World! I'm Louie Jay Tutor, a passionate Web Developer from Antipolo City.
                     I graduated Bachelor of Science in Information Technology degree in EARIST, Manila.
                     I am dedicated to creating a user-friendly web applications.
@@ -50,7 +55,7 @@
         </div>
     </div>
     <div id="skills" class="text-cblack text-center mt-10 p-10">
-        <div alt="My Skills" class="w-w1000 mx-auto custom container">
+        <div alt="skills" class="w-w1000 mx-auto custom container">
             <div class="inline-block align-top h-h350 w-w300 m-2 p-5 border-2 border-blightblack rounded-br5 bg-clightblack shadow-md hover:border-bblue box">
                 <i class="text-cblue text-fs70 p-7 fas fa-desktop"></i>
                 <h1 class="text-white text-fs16 font-bold p-3">Computer Literate</h1>
@@ -122,7 +127,7 @@
         </div>
     </div>
     <div id="projects" class="text-center mt-10 p-10 bg-clightblack">
-        <div alt="My Projects" class="w-w1000 mx-auto custom container">
+        <div alt="projects" class="w-w1000 mx-auto custom container">
             <div class="text-left inline-block m-2 align-top w-w300 p-2 border-2 border-bblack rounded-br5 bg-cblack hover:border-bblue box">
                 <img src="img/systems/system1.jpg" class="w-w300 rounded-br5 system">
                 <div class="h-h300 p-5">
@@ -215,7 +220,7 @@
         </div>
     </div>
     <div id="certificates" class="text-cblack text-center mt-10 p-10">
-        <div alt="My Certificates" class="w-w1000 mx-auto custom container">
+        <div alt="certificates" class="w-w1000 mx-auto custom container">
             <div class="relative h-h300 w-w300 overflow-hidden inline-block m-2 p-2 border-2 border-blightblack rounded-br5 bg-clightblack shadow-md hover:border-bblue">
                 <img src="img/certificates/certificate1.jpg" title="Certificate of Participation in 17th ITE Congress" class="h-full w-full object-cover object-center">
             </div>
@@ -237,7 +242,7 @@
         </div>
     </div>
     <div id="contact" class="text-center mt-10 p-10 bg-clightblack">
-        <div alt="Contact Me" class="w-w1000 mx-auto custom container">
+        <div alt="contact" class="w-w1000 mx-auto custom container">
             <div class="text-left inline-block align-top w-w500 m-2 p-5 rounded-br5 bg-cblack contact-l">
                 <h1 class="text-cgray mb-2">I love to connect and explore how my skills can benefit your organization. Please don't hesitate to get in touch if you'd like to discuss collaboration opportunities. I'm ready to help bring your ideas to fruition and be a valuable part of your team. Let's embark on this journey together!</h1>
                 <h1 class="text-cgray mb-2 p-2 pl-3 rounded-br5 bg-clightblack shadow-md"><i class="text-clightblue mr-2 fas fa-mobile-alt"></i> 0966 409 6369</h1>

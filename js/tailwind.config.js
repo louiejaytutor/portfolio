@@ -29,6 +29,7 @@ tailwind.config = {
             },
             width: {
                 "w30": "30px",
+                "w56": "56px",
                 "w75": "75px",
                 "w100": "100px",
                 "w200": "200px",
