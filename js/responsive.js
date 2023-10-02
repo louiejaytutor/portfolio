@@ -12,7 +12,6 @@ $(document).ready(function () {
             $(".container-r").removeClass("w-w450");
             $(".container-r").addClass("w-full");
 
-            $(".about-mypic").addClass("mx-auto");
             $(".about-mypic").addClass("mb-10");
             $(".about-mypic").removeClass("h-h400");
             $(".about-mypic").addClass("h-h300");
@@ -27,7 +26,6 @@ $(document).ready(function () {
             $(".container-r").removeClass("w-full");
             $(".container-r").addClass("w-w450");
 
-            $(".about-mypic").removeClass("mx-auto");
             $(".about-mypic").removeClass("mb-10");
             $(".about-mypic").removeClass("h-h300");
             $(".about-mypic").addClass("h-h400");
