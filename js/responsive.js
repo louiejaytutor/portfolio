@@ -79,8 +79,6 @@ $(document).ready(function () {
             $(".box").removeClass("w-full");
             $(".box").addClass("w-w300");
 
-            $(".system").removeClass("w-full");
-            $(".system").addClass("w-w300");
         }
 
         if (windowWidth <= 596) {
