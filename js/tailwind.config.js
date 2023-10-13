@@ -16,7 +16,7 @@ tailwind.config = {
                 "fs70": "70px",
             },
             fontFamily: {
-                 'bahnschrift': ['Bahnschrift', 'sans'],
+                 "bahnschrift": ["Bahnschrift", "sans"],
             },
             height: {
                 "h30": "30px",
