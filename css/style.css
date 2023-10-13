@@ -21,7 +21,7 @@ html {
 
 .custom::before {
     content: "<" attr(alt) ">";
-    font-family: Consolas;
+    font-family: Bahnschrift;
     font-size: 20px;
     text-align: left;
     font-weight: bold;
@@ -31,7 +31,7 @@ html {
 }
 .custom::after {
     content: "</" attr(alt) ">";
-    font-family: Consolas;
+    font-family: Bahnschrift;
     font-size: 20px;
     text-align: left;
     font-weight: bold;
