@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
 * {
     user-select: none;
     margin: 0;
@@ -21,7 +23,7 @@ html {
 
 .custom::before {
     content: "<" attr(alt) ">";
-    font-family: Bahnschrift;
+    font-family: Consolas;
     font-size: 20px;
     text-align: left;
     font-weight: bold;
@@ -31,7 +33,7 @@ html {
 }
 .custom::after {
     content: "</" attr(alt) ">";
-    font-family: Bahnschrift;
+    font-family: Consolas;
     font-size: 20px;
     text-align: left;
     font-weight: bold;
