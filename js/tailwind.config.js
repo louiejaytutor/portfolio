@@ -16,7 +16,7 @@ tailwind.config = {
                 "fs70": "70px",
             },
             fontFamily: {
-                 sans: ["Bahnschrift", "Arial", "sans-serif"],
+                sans: ["Poppins", "Arial", "sans-serif"],
             },
             height: {
                 "h30": "30px",
