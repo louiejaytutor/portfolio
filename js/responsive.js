@@ -76,8 +76,11 @@ $(document).ready(function () {
             $(".system").addClass("w-full m-2");
         }
         else {
-            $(".box").removeClass("w-full");
-            $(".box").addClass("w-w300");
+            $(".box").removeClass("w-full mb-4");
+            $(".box").addClass("w-w300 m-2");
+
+            $(".system").removeClass("w-full m-2");
+            $(".system").addClass("w-w300 mb-4");
 
         }
 
