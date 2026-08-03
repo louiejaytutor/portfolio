@@ -1,6 +1,12 @@
 document.addEventListener("DOMContentLoaded", async function () {
     await Promise.all([
-        home(), about(), skills(), projects(), experience(), contact()
+        home(),
+        about(),
+        skills(),
+        projects(),
+        experience(),
+        certificates(),
+        contact()
     ]);
     initApp();
 });
@@ -33,6 +39,12 @@ async function experience() {
     const response = await fetch("views/experience.html");
     const html = await response.text();
     document.getElementById("experience").innerHTML = html;
+}
+
+async function certificates() {
+    const response = await fetch("views/certificates.html");
+    const html = await response.text();
+    document.getElementById("certificates").innerHTML = html;
 }
 
 async function contact() {

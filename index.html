@@ -14,7 +14,6 @@
 <body>
   <div class="grid-bg"></div>
   <div class="noise"></div>
-  
   <div class="content-layer" style="position:fixed; inset:0; z-index:1; pointer-events:none; overflow:hidden;">
     <div class="particle" style="width:6px;height:6px; top:15%; left:8%; animation-delay:0s;"></div>
     <div class="particle" style="width:4px;height:4px; top:60%; left:5%; animation-delay:2s;"></div>
@@ -22,44 +21,47 @@
     <div class="particle" style="width:5px;height:5px; top:75%; left:88%; animation-delay:3s;"></div>
     <div class="particle" style="width:3px;height:3px; top:45%; left:50%; animation-delay:4s;"></div>
   </div>
-
-  <nav id="navbar" style="position:fixed; top:0; left:0; right:0; z-index:9999;">
+  <nav id="navbar" style="position: fixed; top: 0; left: 0; right: 0; z-index: 9999;">
     <div class="max-w-7xl mx-auto px-6 lg:px-10 flex items-center justify-between h-20 relative" style="z-index:2;">
-      <a href="#home" class="font-display font-bold text-lg tracking-widest" style="color:#fff;">LOUIE<span style="color:var(--primary)">.DEV</span></a>
+      <a href="#home" class="font-display font-bold text-lg tracking-widest" style="color:#fff;">
+        LOUIE<span style="color:var(--primary)">.TUTOR</span>
+      </a>
       <div class="hidden md:flex items-center gap-10">
-        <a class="nav-link active" data-target="home">Home</a>
-        <a class="nav-link" data-target="about">About</a>
-        <a class="nav-link" data-target="skills">Skills</a>
-        <a class="nav-link" data-target="projects">Projects</a>
-        <a class="nav-link" data-target="experience">Experience</a>
-        <a class="nav-link" data-target="contact">Contact</a>
+          <a class="nav-link active" data-target="home">Home</a>
+          <a class="nav-link" data-target="about">About</a>
+          <a class="nav-link" data-target="skills">Skills</a>
+          <a class="nav-link" data-target="projects">Projects</a>
+          <a class="nav-link" data-target="experience">Experience</a>
+          <a class="nav-link" data-target="certificates">Certificates</a>
+          <a class="nav-link" data-target="contact">Contact</a>
       </div>
       <div class="hidden md:block">
-        <a href="#contact" class="btn-primary">Get in Touch</a>
+          <a href="#contact" class="btn-primary">Get in Touch</a>
       </div>
       <button id="menuBtn" class="md:hidden flex items-center justify-center" aria-label="Toggle menu" aria-expanded="false" style="width:44px; height:44px; color:#fff; background:transparent; border:1px solid var(--border); flex-shrink:0;">
-        <i id="menuIconOpen" data-lucide="menu" style="width: 22px; height: 22px;"></i>
-        <i id="menuIconClose" data-lucide="x" style="width: 22px; height: 22px; display: none;"></i>
+          <i id="menuIconOpen" data-lucide="menu" style="width: 22px; height: 22px;"></i>
+          <i id="menuIconClose" data-lucide="x" style="width: 22px; height: 22px; display: none;"></i>
       </button>
     </div>
     <div id="mobileMenu" class="mobile-menu md:hidden glass-strong px-6" style="position:relative; z-index:1;">
-      <div class="flex flex-col gap-1 py-6 font-tech uppercase tracking-widest text-sm">
-        <a class="nav-link block py-3" data-target="home">Home</a>
-        <a class="nav-link block py-3" data-target="about">About</a>
-        <a class="nav-link block py-3" data-target="skills">Skills</a>
-        <a class="nav-link block py-3" data-target="projects">Projects</a>
-        <a class="nav-link block py-3" data-target="experience">Experience</a>
-        <a class="nav-link block py-3" data-target="contact">Contact</a>
-        <a href="#contact" class="btn-primary justify-center mt-4" data-target="contact">Get in Touch</a>
-      </div>
+        <div class="flex flex-col gap-1 py-6 font-tech uppercase tracking-widest text-sm">
+            <a class="nav-link block py-3" data-target="home">Home</a>
+            <a class="nav-link block py-3" data-target="about">About</a>
+            <a class="nav-link block py-3" data-target="skills">Skills</a>
+            <a class="nav-link block py-3" data-target="projects">Projects</a>
+            <a class="nav-link block py-3" data-target="experience">Experience</a>
+            <a class="nav-link block py-3" data-target="certificates">Certificates</a>
+            <a class="nav-link block py-3" data-target="contact">Contact</a>
+            <a href="#contact" class="btn-primary justify-center mt-4" data-target="contact">Get in Touch</a>
+        </div>
     </div>
   </nav>
-
   <section id="home" class="content-layer relative min-h-screen flex items-center pt-28 pb-16 px-6 lg:px-10"></section>
   <section id="about" class="content-layer relative py-28 px-6 lg:px-10 overflow-hidden"></section>
   <section id="skills" class="content-layer relative py-28 px-6 lg:px-10" style="background:linear-gradient(180deg, transparent, rgba(255,107,0,0.02), transparent);"></section>
   <section id="projects" class="content-layer relative py-28 px-6 lg:px-10"></section>
   <section id="experience" class="content-layer relative py-28 px-6 lg:px-10" style="background:linear-gradient(180deg, transparent, rgba(255,107,0,0.02), transparent);"></section>
+  <section id="certificates" class="content-layer relative py-28 px-6 lg:px-10"></section>
   <section class="content-layer relative py-20 px-6 lg:px-10">
     <div class="max-w-6xl mx-auto glass-strong px-8 py-14 reveal">
       <div class="grid grid-cols-2 md:grid-cols-4 gap-10 text-center">
