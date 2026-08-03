@@ -1,10 +1,8 @@
-document.addEventListener("DOMContentLoaded", function () {
-    home();
-    about();
-    skills();
-    projects();
-    experience();
-    contact();
+document.addEventListener("DOMContentLoaded", async function () {
+    await Promise.all([
+        home(), about(), skills(), projects(), experience(), contact()
+    ]);
+    initApp();
 });
 
 async function home() {

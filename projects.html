@@ -6,9 +6,10 @@
     <title>Projects - Louie Jay Tutor Portfolio</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;900&family=Space+Grotesk:wght@300;400;500;600;700&family=Rajdhani:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/lucide/0.400.0/umd/lucide.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.0/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css">
     <link rel="stylesheet" href="public/css/style.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
 </head>
 <body>
     <div class="grid-bg"></div>
@@ -18,30 +19,30 @@
         <div class="max-w-7xl mx-auto px-6 lg:px-10 flex items-center justify-between h-20 relative" style="z-index:2;">
             <a href="./" class="font-display font-bold text-lg tracking-widest" style="color:#fff;">LOUIE<span style="color:var(--primary)">.DEV</span></a>
             <div class="hidden md:flex items-center gap-10">
-            <a href="./#home" class="nav-link" data-target="home">Home</a>
-            <a href="./#about" class="nav-link" data-target="about">About</a>
-            <a href="./#skills" class="nav-link" data-target="skills">Skills</a>
-            <a href="#projects" class="nav-link active" data-target="projects">Projects</a>
-            <a href="./#experience" class="nav-link" data-target="experience">Experience</a>
-            <a href="./#contact" class="nav-link" data-target="contact">Contact</a>
+                <a href="./#home" class="nav-link" data-target="home">Home</a>
+                <a href="./#about" class="nav-link" data-target="about">About</a>
+                <a href="./#skills" class="nav-link" data-target="skills">Skills</a>
+                <a href="#projects" class="nav-link active" data-target="projects">Projects</a>
+                <a href="./#experience" class="nav-link" data-target="experience">Experience</a>
+                <a href="./#contact" class="nav-link" data-target="contact">Contact</a>
             </div>
             <div class="hidden md:block">
-            <a href="./#contact" class="btn-primary">Get in Touch</a>
+                <a href="./#contact" class="btn-primary">Get in Touch</a>
             </div>
             <button id="menuBtn" class="md:hidden flex items-center justify-center" aria-label="Toggle menu" aria-expanded="false" style="width:44px; height:44px; color:#fff; background:transparent; border:1px solid var(--border); flex-shrink:0;">
-            <i id="menuIconOpen" data-lucide="menu" style="width:22px;height:22px;"></i>
-            <i id="menuIconClose" data-lucide="x" style="width:22px;height:22px; display:none;"></i>
+                <i id="menuIconOpen" data-lucide="menu" style="width: 22px; height: 22px;"></i>
+                <i id="menuIconClose" data-lucide="x" style="width: 22px; height: 22px; display: none;"></i>
             </button>
         </div>
         <div id="mobileMenu" class="mobile-menu md:hidden glass-strong px-6" style="position:relative; z-index:1;">
             <div class="flex flex-col gap-1 py-6 font-tech uppercase tracking-widest text-sm">
-            <a href="./#home" class="nav-link block py-3" data-target="home">Home</a>
-            <a href="./#about" class="nav-link block py-3" data-target="about">About</a>
-            <a href="./#skills" class="nav-link block py-3" data-target="skills">Skills</a>
-            <a href="#projects" class="nav-link block py-3 active" data-target="projects">Projects</a>
-            <a href="./#experience" class="nav-link block py-3" data-target="experience">Experience</a>
-            <a href="./#contact" class="nav-link block py-3" data-target="contact">Contact</a>
-            <a href="./#contact" class="btn-primary justify-center mt-4" data-target="contact">Get in Touch</a>
+                <a href="./#home" class="nav-link block py-3" data-target="home">Home</a>
+                <a href="./#about" class="nav-link block py-3" data-target="about">About</a>
+                <a href="./#skills" class="nav-link block py-3" data-target="skills">Skills</a>
+                <a href="#projects" class="nav-link block py-3 active" data-target="projects">Projects</a>
+                <a href="./#experience" class="nav-link block py-3" data-target="experience">Experience</a>
+                <a href="./#contact" class="nav-link block py-3" data-target="contact">Contact</a>
+                <a href="./#contact" class="btn-primary justify-center mt-4" data-target="contact">Get in Touch</a>
             </div>
         </div>
     </nav>
@@ -118,11 +119,10 @@
                 <div class="project-card">
                     <div class="project-media flex items-start justify-center">
                         <div class="scan"></div>
-                        <i data-lucide="headset" style="width:56px;height:56px; color:var(--primary); opacity:0.85;"></i>
                     </div>
                     <div class="p-7">
                         <h3 class="font-display font-bold text-lg mb-2">Customer Relationship Management System</h3>
-                        <p class="text-sm leading-relaxed mb-4" style="color:var(--muted)">Integrated CRM suite with a core CRM module, real-time monitoring dashboard, and ticketing management, supporting end-to-end client operations. Improved user efficiency by 20% and cut response time by 15%.</p>
+                        <p class="text-sm leading-relaxed mb-4" style="color:var(--muted)">CRM platform that routes incoming client calls to available agents and logs each interaction against the client's account record. Centralized call handling and account history, improving user efficiency by 20%.</p>
                         <div class="flex flex-wrap gap-2 mb-5">
                             <span class="font-tech text-xs px-2.5 py-1 border" style="border-color:var(--border); color:var(--secondary);">CodeIgniter 4</span>
                             <span class="font-tech text-xs px-2.5 py-1 border" style="border-color:var(--border); color:var(--secondary);">jQuery</span>
@@ -134,11 +134,10 @@
                 <div class="project-card">
                     <div class="project-media flex items-start justify-center">
                         <div class="scan"></div>
-                        <i data-lucide="headset" style="width:56px;height:56px; color:var(--primary); opacity:0.85;"></i>
                     </div>
                     <div class="p-7">
                         <h3 class="font-display font-bold text-lg mb-2">CRM Real-Time Monitoring System</h3>
-                        <p class="text-sm leading-relaxed mb-4" style="color:var(--muted)">Integrated CRM suite with a core CRM module, real-time monitoring dashboard, and ticketing management, supporting end-to-end client operations. Improved user efficiency by 20% and cut response time by 15%.</p>
+                        <p class="text-sm leading-relaxed mb-4" style="color:var(--muted)">Real-time monitoring dashboard built on top of the CRM suite, surfacing live account activity and system health at a glance. Gave the team instant visibility into operations, cutting response time by 15%.</p>
                         <div class="flex flex-wrap gap-2 mb-5">
                             <span class="font-tech text-xs px-2.5 py-1 border" style="border-color:var(--border); color:var(--secondary);">CodeIgniter 4</span>
                             <span class="font-tech text-xs px-2.5 py-1 border" style="border-color:var(--border); color:var(--secondary);">jQuery</span>
@@ -150,11 +149,10 @@
                 <div class="project-card">
                     <div class="project-media flex items-start justify-center">
                         <div class="scan"></div>
-                        <i data-lucide="headset" style="width:56px;height:56px; color:var(--primary); opacity:0.85;"></i>
                     </div>
                     <div class="p-7">
                         <h3 class="font-display font-bold text-lg mb-2">CRM Ticketing System</h3>
-                        <p class="text-sm leading-relaxed mb-4" style="color:var(--muted)">Integrated CRM suite with a core CRM module, real-time monitoring dashboard, and ticketing management, supporting end-to-end client operations. Improved user efficiency by 20% and cut response time by 15%.</p>
+                        <p class="text-sm leading-relaxed mb-4" style="color:var(--muted)">Ticketing module for logging, assigning, and resolving client support requests from a shared queue. Standardized issue handling across the support team and shortened resolution turnaround.</p>
                         <div class="flex flex-wrap gap-2 mb-5">
                             <span class="font-tech text-xs px-2.5 py-1 border" style="border-color:var(--border); color:var(--secondary);">CodeIgniter 4</span>
                             <span class="font-tech text-xs px-2.5 py-1 border" style="border-color:var(--border); color:var(--secondary);">jQuery</span>
@@ -169,7 +167,7 @@
                     </div>
                     <div class="p-7">
                         <h3 class="font-display font-bold text-lg mb-2">Annual Report System</h3>
-                        <p class="text-sm leading-relaxed mb-4" style="color:var(--muted)">Integrated CRM suite with a core CRM module, real-time monitoring dashboard, and ticketing management, supporting end-to-end client operations. Improved user efficiency by 20% and cut response time by 15%.</p>
+                        <p class="text-sm leading-relaxed mb-4" style="color:var(--muted)">Reporting platform that compiles departmental data into structured, export-ready annual reports. Replaced manual spreadsheet compilation, improving accuracy and turnaround for report submissions.</p>
                         <div class="flex flex-wrap gap-2 mb-5">
                             <span class="font-tech text-xs px-2.5 py-1 border" style="border-color:var(--border); color:var(--secondary);">PHP</span>
                             <span class="font-tech text-xs px-2.5 py-1 border" style="border-color:var(--border); color:var(--secondary);">JavaScript</span>
@@ -183,7 +181,7 @@
                     </div>
                     <div class="p-7">
                         <h3 class="font-display font-bold text-lg mb-2">SOP Promotional to Diploma System</h3>
-                        <p class="text-sm leading-relaxed mb-4" style="color:var(--muted)">Integrated CRM suite with a core CRM module, real-time monitoring dashboard, and ticketing management, supporting end-to-end client operations. Improved user efficiency by 20% and cut response time by 15%.</p>
+                        <p class="text-sm leading-relaxed mb-4" style="color:var(--muted)">Academic records system that tracks student promotion from certificate to diploma programs based on defined standard operating procedures. Automated eligibility checks, reducing manual processing errors.</p>
                         <div class="flex flex-wrap gap-2 mb-5">
                             <span class="font-tech text-xs px-2.5 py-1 border" style="border-color:var(--border); color:var(--secondary);">PHP</span>
                             <span class="font-tech text-xs px-2.5 py-1 border" style="border-color:var(--border); color:var(--secondary);">JavaScript</span>
@@ -197,7 +195,7 @@
                     </div>
                     <div class="p-7">
                         <h3 class="font-display font-bold text-lg mb-2">Evaluation Process to Diploma System</h3>
-                        <p class="text-sm leading-relaxed mb-4" style="color:var(--muted)">Integrated CRM suite with a core CRM module, real-time monitoring dashboard, and ticketing management, supporting end-to-end client operations. Improved user efficiency by 20% and cut response time by 15%.</p>
+                        <p class="text-sm leading-relaxed mb-4" style="color:var(--muted)">Workflow system managing the multi-stage evaluation required for diploma qualification, from submission through approval. Centralized evaluator reviews and cut turnaround time on status updates.</p>
                         <div class="flex flex-wrap gap-2 mb-5">
                             <span class="font-tech text-xs px-2.5 py-1 border" style="border-color:var(--border); color:var(--secondary);">PHP</span>
                             <span class="font-tech text-xs px-2.5 py-1 border" style="border-color:var(--border); color:var(--secondary);">JavaScript</span>
@@ -208,11 +206,10 @@
                 <div class="project-card">
                     <div class="project-media flex items-start justify-center">
                         <div class="scan"></div>
-                        <i data-lucide="headset" style="width:56px;height:56px; color:var(--primary); opacity:0.85;"></i>
                     </div>
                     <div class="p-7">
                         <h3 class="font-display font-bold text-lg mb-2">Queuing System</h3>
-                        <p class="text-sm leading-relaxed mb-4" style="color:var(--muted)">Integrated CRM suite with a core CRM module, real-time monitoring dashboard, and ticketing management, supporting end-to-end client operations. Improved user efficiency by 20% and cut response time by 15%.</p>
+                        <p class="text-sm leading-relaxed mb-4" style="color:var(--muted)">Digital queuing platform that issues and tracks service numbers in real time to manage walk-in client flow. Reduced front-desk congestion and improved the pace of daily transaction handling.</p>
                         <div class="flex flex-wrap gap-2 mb-5">
                             <span class="font-tech text-xs px-2.5 py-1 border" style="border-color:var(--border); color:var(--secondary);">PHP</span>
                             <span class="font-tech text-xs px-2.5 py-1 border" style="border-color:var(--border); color:var(--secondary);">JavaScript</span>
@@ -226,7 +223,7 @@
                     </div>
                     <div class="p-7">
                         <h3 class="font-display font-bold text-lg mb-2">Event Tabulation System</h3>
-                        <p class="text-sm leading-relaxed mb-4" style="color:var(--muted)">Integrated CRM suite with a core CRM module, real-time monitoring dashboard, and ticketing management, supporting end-to-end client operations. Improved user efficiency by 20% and cut response time by 15%.</p>
+                        <p class="text-sm leading-relaxed mb-4" style="color:var(--muted)">Live scoring platform for competitions and events, aggregating judges' scores into real-time rankings on screen. Eliminated manual tallying and removed delays in announcing results.</p>
                         <div class="flex flex-wrap gap-2 mb-5">
                             <span class="font-tech text-xs px-2.5 py-1 border" style="border-color:var(--border); color:var(--secondary);">PHP</span>
                             <span class="font-tech text-xs px-2.5 py-1 border" style="border-color:var(--border); color:var(--secondary);">JavaScript</span>
@@ -240,7 +237,7 @@
                     </div>
                     <div class="p-7">
                         <h3 class="font-display font-bold text-lg mb-2">Appointment System</h3>
-                        <p class="text-sm leading-relaxed mb-4" style="color:var(--muted)">Integrated CRM suite with a core CRM module, real-time monitoring dashboard, and ticketing management, supporting end-to-end client operations. Improved user efficiency by 20% and cut response time by 15%.</p>
+                        <p class="text-sm leading-relaxed mb-4" style="color:var(--muted)">Scheduling platform for booking, rescheduling, and tracking client appointments with automated slot availability. Reduced double-bookings and simplified front-desk scheduling.</p>
                         <div class="flex flex-wrap gap-2 mb-5">
                             <span class="font-tech text-xs px-2.5 py-1 border" style="border-color:var(--border); color:var(--secondary);">PHP</span>
                             <span class="font-tech text-xs px-2.5 py-1 border" style="border-color:var(--border); color:var(--secondary);">MySQL</span>
@@ -253,17 +250,17 @@
                     </div>
                     <div class="p-7">
                         <h3 class="font-display font-bold text-lg mb-2">MaThime</h3>
-                        <p class="text-sm leading-relaxed mb-4" style="color:var(--muted)">Integrated CRM suite with a core CRM module, real-time monitoring dashboard, and ticketing management, supporting end-to-end client operations. Improved user efficiency by 20% and cut response time by 15%.</p>
+                        <p class="text-sm leading-relaxed mb-4" style="color:var(--muted)">Mobile math learning app that syncs student progress in real time through Firebase, letting learners practice and track skill mastery. Delivered instant exercise feedback powered by Firebase's real-time database.</p>
                         <div class="flex flex-wrap gap-2 mb-5">
                             <span class="font-tech text-xs px-2.5 py-1 border" style="border-color:var(--border); color:var(--secondary);">Java</span>
                             <span class="font-tech text-xs px-2.5 py-1 border" style="border-color:var(--border); color:var(--secondary);">Firebase Realtime Database</span>
                         </div>
                         <div class="flex gap-4">
                             <a href="https://youtu.be/9gWeNmjiWhI" class="text-sm font-tech font-semibold flex items-center gap-1.5" style="color:var(--primary)" target="_blank">
-                                <i data-lucide="external-link" style="width:14px;height:14px;"></i>Demo
+                                <i data-lucide="external-link" style="width: 14px; height: 14px;"></i>Demo
                             </a>
                             <a href="https://github.com/louiejaytutor/mathime" class="text-sm font-tech font-semibold flex items-center gap-1.5" style="color:var(--muted)" target="_blank">
-                                <i data-lucide="github" style="width:14px;height:14px;"></i>GitHub
+                                <i class="fa-brands fa-github" style="width: 14px; height: 14px;"></i>GitHub
                             </a>
                         </div>
                     </div>
@@ -274,7 +271,7 @@
                     </div>
                     <div class="p-7">
                         <h3 class="font-display font-bold text-lg mb-2">Ordering System</h3>
-                        <p class="text-sm leading-relaxed mb-4" style="color:var(--muted)">Integrated CRM suite with a core CRM module, real-time monitoring dashboard, and ticketing management, supporting end-to-end client operations. Improved user efficiency by 20% and cut response time by 15%.</p>
+                        <p class="text-sm leading-relaxed mb-4" style="color:var(--muted)">Point-of-sale style ordering platform for capturing customer orders and tracking status from placement through fulfillment. Simplified order tracking and cut down manual entry errors.</p>
                         <div class="flex flex-wrap gap-2 mb-5">
                             <span class="font-tech text-xs px-2.5 py-1 border" style="border-color:var(--border); color:var(--secondary);">PHP</span>
                             <span class="font-tech text-xs px-2.5 py-1 border" style="border-color:var(--border); color:var(--secondary);">MySQL</span>
@@ -287,7 +284,7 @@
                     </div>
                     <div class="p-7">
                         <h3 class="font-display font-bold text-lg mb-2">Cinema Reservation System</h3>
-                        <p class="text-sm leading-relaxed mb-4" style="color:var(--muted)">Integrated CRM suite with a core CRM module, real-time monitoring dashboard, and ticketing management, supporting end-to-end client operations. Improved user efficiency by 20% and cut response time by 15%.</p>
+                        <p class="text-sm leading-relaxed mb-4" style="color:var(--muted)">Seat reservation platform for booking movie tickets online with real-time seat availability and instant booking confirmation. Reduced booking conflicts and streamlined ticketing for staff and moviegoers alike.</p>
                         <div class="flex flex-wrap gap-2 mb-5">
                             <span class="font-tech text-xs px-2.5 py-1 border" style="border-color:var(--border); color:var(--secondary);">PHP</span>
                             <span class="font-tech text-xs px-2.5 py-1 border" style="border-color:var(--border); color:var(--secondary);">MySQL</span>
@@ -302,16 +299,25 @@
         <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6">
             <a href="#home" class="font-display font-bold tracking-widest">LOUIE<span style="color:var(--primary)">.DEV</span></a>
             <div class="flex items-center gap-6">
-            <a href="#" style="color:var(--muted)"><i data-lucide="github" style="width:18px;height:18px;"></i></a>
-            <a href="#" style="color:var(--muted)"><i data-lucide="linkedin" style="width:18px;height:18px;"></i></a>
-            <a href="#" style="color:var(--muted)"><i data-lucide="mail" style="width:18px;height:18px;"></i></a>
+                <a href="#" style="color: var(--muted)">
+                    <i class="fa-brands fa-github" style="width: 18px; height: 18px;"></i>
+                </a>
+                <a href="#" style="color: var(--muted)">
+                    <i class="fa-brands fa-linkedin" style="width: 18px; height: 18px;"></i>
+                </a>
+                <a href="#" style="color: var(--muted)">
+                    <i data-lucide="mail" style="width: 18px; height: 18px;"></i>
+                </a>
             </div>
             <p class="font-tech text-xs" style="color:var(--muted)">© 2026 Louie Jay Tutor — All rights reserved</p>
             <button id="backToTop" class="w-10 h-10 flex items-center justify-center border" style="border-color:var(--border)">
-            <i data-lucide="arrow-up" style="width:16px;height:16px; color:var(--primary)"></i>
+                <i data-lucide="arrow-up" style="width: 16px; height: 16px; color: var(--primary)"></i>
             </button>
         </div>
     </footer>
     <script src="public/js/main.js"></script>
+    <script>
+        initApp();
+    </script>
 </body>
 </html>

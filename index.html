@@ -5,14 +5,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Louie Jay Tutor Portfolio</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;900&family=Space+Grotesk:wght@300;400;500;600;700&family=Rajdhani:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/lucide/0.400.0/umd/lucide.js"></script>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;900&family=Space+Grotesk:wght@300;400;500;600;700&family=Rajdhani:wght@400;500;600;700&display=swap">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.0/css/all.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css">
   <link rel="stylesheet" href="public/css/style.css">
+  <script src="https://unpkg.com/lucide@latest"></script>
 </head>
 <body>
   <div class="grid-bg"></div>
   <div class="noise"></div>
+  
   <div class="content-layer" style="position:fixed; inset:0; z-index:1; pointer-events:none; overflow:hidden;">
     <div class="particle" style="width:6px;height:6px; top:15%; left:8%; animation-delay:0s;"></div>
     <div class="particle" style="width:4px;height:4px; top:60%; left:5%; animation-delay:2s;"></div>
@@ -36,8 +38,8 @@
         <a href="#contact" class="btn-primary">Get in Touch</a>
       </div>
       <button id="menuBtn" class="md:hidden flex items-center justify-center" aria-label="Toggle menu" aria-expanded="false" style="width:44px; height:44px; color:#fff; background:transparent; border:1px solid var(--border); flex-shrink:0;">
-        <i id="menuIconOpen" data-lucide="menu" style="width:22px;height:22px;"></i>
-        <i id="menuIconClose" data-lucide="x" style="width:22px;height:22px; display:none;"></i>
+        <i id="menuIconOpen" data-lucide="menu" style="width: 22px; height: 22px;"></i>
+        <i id="menuIconClose" data-lucide="x" style="width: 22px; height: 22px; display: none;"></i>
       </button>
     </div>
     <div id="mobileMenu" class="mobile-menu md:hidden glass-strong px-6" style="position:relative; z-index:1;">
@@ -86,13 +88,19 @@
     <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6">
       <a href="#home" class="font-display font-bold tracking-widest">LOUIE<span style="color:var(--primary)">.DEV</span></a>
       <div class="flex items-center gap-6">
-        <a href="#" style="color:var(--muted)"><i data-lucide="github" style="width:18px;height:18px;"></i></a>
-        <a href="#" style="color:var(--muted)"><i data-lucide="linkedin" style="width:18px;height:18px;"></i></a>
-        <a href="#" style="color:var(--muted)"><i data-lucide="mail" style="width:18px;height:18px;"></i></a>
+        <a href="#" style="color: var(--muted)">
+          <i class="fa-brands fa-github" style="width: 18px; height: 18px;"></i>
+        </a>
+        <a href="#" style="color: var(--muted)">
+          <i class="fa-brands fa-linkedin" style="width: 18px; height: 18px;"></i>
+        </a>
+        <a href="#" style="color: var(--muted)">
+          <i data-lucide="mail" style="width: 18px; height: 18px;"></i>
+        </a>
       </div>
       <p class="font-tech text-xs" style="color:var(--muted)">© 2026 Louie Jay Tutor — All rights reserved</p>
-      <button id="backToTop" class="w-10 h-10 flex items-center justify-center border" style="border-color:var(--border)">
-        <i data-lucide="arrow-up" style="width:16px;height:16px; color:var(--primary)"></i>
+      <button id="backToTop" class="w-10 h-10 flex items-center justify-center border" style="border-color: var(--border)">
+        <i data-lucide="arrow-up" style="width: 16px; height: 16px; color: var(--primary)"></i>
       </button>
     </div>
   </footer>
