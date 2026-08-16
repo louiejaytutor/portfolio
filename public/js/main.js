@@ -82,3 +82,22 @@ function initApp() {
 
     document.getElementById('backToTop').addEventListener('click', () => window.scrollTo({top:0, behavior:'smooth'}));
 }
+
+
+updateFavicon();
+
+window.matchMedia("(prefers-color-scheme: dark)").addEventListener("change", updateFavicon);
+
+function updateFavicon() {
+    const icon = document.getElementById("icon");
+    const apple_touch_icon = document.getElementById("apple-touch-icon");
+
+    if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
+        icon.href = "/public/img/icon-dark.ico";
+        apple_touch_icon.href = "/public/img/icon-dark.ico";
+    }
+    else {
+        icon.href = "/public/img/icon.ico";
+        apple_touch_icon.href = "/public/img/icon.ico";
+    }
+}

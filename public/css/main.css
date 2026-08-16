@@ -1,0 +1,7 @@
+* {
+    -webkit-touch-callout: none; /* iOS Safari (disables long-press callout menu) */
+    -webkit-user-select: none; /* Safari and Chrome */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none; /* Standard syntax (Chrome, Edge, Opera) */
+}
