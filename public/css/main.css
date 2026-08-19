@@ -5,3 +5,97 @@
     -ms-user-select: none; /* Internet Explorer/Edge */
     user-select: none; /* Standard syntax (Chrome, Edge, Opera) */
 }
+
+::-webkit-scrollbar {
+    height: 8px;
+}
+
+/* Base Tree Container */
+.programming-tree {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.programming-tree ul {
+    position: relative;
+    display: flex;
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+}
+
+.programming-tree li {
+    position: relative;
+    float: left;
+    text-align: center;
+    list-style-type: none;
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+}
+
+.programming-tree li::before, 
+.programming-tree li::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 50%;
+    height: 20px;
+    width: 50%;
+    border-top: 1px solid #fff;
+}
+
+.programming-tree li::after {
+    left: 50%;
+    right: auto;
+    border-left: 1px solid #fff;
+}
+
+.programming-tree li:only-child::after, 
+.programming-tree li:only-child::before {
+    display: none;
+}
+
+.programming-tree li:only-child {
+    padding-top: 0;
+}
+
+.programming-tree li:first-child::before, 
+.programming-tree li:last-child::after {
+    border: 0 none;
+}
+
+.programming-tree li:last-child::before {
+    border-right: 1px solid #fff;
+}
+
+.programming-tree ul ul::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    height: 20px;
+    width: 0;
+    margin-left: -1px;
+    border-left: 1px solid #fff;
+}
+
+.programming-tree li span {
+    border: 1px solid var(--border-soft);
+    background: var(--card);
+}
+
+.programming-tree li span:hover + ul li::after, 
+.programming-tree li span:hover + ul li::before, 
+.programming-tree li span:hover + ul::before, 
+.programming-tree li span:hover + ul ul::before {
+    border-color: var(--primary);
+}
+
+@media screen and (max-width: 1280px) {
+  .programming-tree {
+    overflow-x: scroll;
+    justify-content: flex-start;
+  }
+}
